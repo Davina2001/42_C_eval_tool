@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# 定义颜色
+# Color
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
-NC='\033[0m' # 无颜色
+NC='\033[0m'
 
 # Step 0: Display directory structure using tree command
 echo -e "${BLUE}Displaying directory structure...${NC}"
@@ -30,7 +30,7 @@ for dir in $(find . -type d -name "ex*" | sort); do
     if [ -f "$dir/a.out" ]; then
         echo -e "${GREEN}Executing $dir/a.out${NC}"
         (cd "$dir" && ./a.out)
-        echo # 添加一个空行来换行显示
+        echo
     fi
 done
 
