@@ -36,7 +36,7 @@ This script is designed to automate the process of checking, cleaning, compiling
     ./c_eval.sh
 ```
 
-    The script will:
+The script will:
     - Display the directory structure.
     - Run norminette checks on all C files, ordered by directory.
     - Remove the last /* and */ symbols from each C file.
