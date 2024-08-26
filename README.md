@@ -50,13 +50,21 @@ This script is designed to automate the process of checking, cleaning, compiling
 - *Directory Placement*: Ensure that the script is placed and executed from the root directory of your repository. Below is a sample directory structure to illustrate where the script should reside:
 
     plaintext
+  
     your-project-root/
+  
     ├── c_eval.sh
+  
     ├── ex00/
+  
     │   └── your_file.c
+  
     ├── ex01/
+
     │   └── your_file.c
+  
     └── ex02/
+  
         └── your_file.c
     
 
@@ -64,7 +72,7 @@ This script is designed to automate the process of checking, cleaning, compiling
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Contributing
 
