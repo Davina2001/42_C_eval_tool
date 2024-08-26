@@ -47,20 +47,6 @@ int	main(void)
 ```
 
 - *Comment Removal*: The script removes the last /* and */ comment symbols from all C files. If your program relies on these comments at the end of the files, using this script may cause unintended behavior or errors.
-  
-- *Directory Placement*: Ensure that the script is placed and executed from the root directory of your repository. Below is a sample directory structure to illustrate where the script should reside:
-
-```plaintext
-    your-project-root/
-    ├── 42_c_eval_tool.sh
-    ├── ex00/
-    │   └── your_file.c
-    ├── ex01/
-    │   └── your_file.c
-    └── ex02/
-        └── your_file.c
-```
-In this example, c_eval.sh should be placed in the your-project-root/ directory.
 
 ## Requirements
 
@@ -74,14 +60,27 @@ In this example, c_eval.sh should be placed in the your-project-root/ directory.
 ```bash
 git clone https://github.com/Davina2001/42_C_eval_tool.git
 ```
-    
 
-2. *Make the script executable*:
+2. *Directory Placement*: Ensure that the script is placed and executed from the root directory of your evaluation repository. Below is a sample directory structure to illustrate where the script should reside:
+
+```plaintext
+    your-project-root/
+    ├── 42_c_eval_tool.sh
+    ├── ex00/
+    │   └── your_file.c
+    ├── ex01/
+    │   └── your_file.c
+    └── ex02/
+        └── your_file.c
+```
+In this example, c_eval.sh should be placed in the your-project-root/ directory.
+
+3. *Make the script executable*:
 ```bash
 chmod +x c_eval.sh
 ```    
 
-3. *Run the script*:
+4. *Run the script*:
 ```bash
 ./c_eval.sh
 ```
