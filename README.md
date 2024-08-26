@@ -22,18 +22,18 @@ This script is designed to automate the process of checking, cleaning, compiling
 
 1. *Clone the repository*:
 ```bash
-    git clone https://github.com/Davina2001/42_C_eval_tool.git
+git clone https://github.com/Davina2001/42_C_eval_tool.git
 ```
     
 
 2. *Make the script executable*:
 ```bash
-    chmod +x c_eval.sh
+chmod +x c_eval.sh
 ```    
 
 3. *Run the script*:
 ```bash
-    ./c_eval.sh
+./c_eval.sh
 ```
 
 The script will:
