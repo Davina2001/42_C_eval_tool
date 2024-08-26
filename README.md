@@ -37,11 +37,11 @@ This script is designed to automate the process of checking, cleaning, compiling
 ```
 
 The script will:
-    - Display the directory structure.
-    - Run norminette checks on all C files, ordered by directory.
-    - Remove the last /* and */ symbols from each C file.
-    - Compile each C file in its directory and generate an a.out executable.
-    - Execute each a.out file in order, displaying the results.
+- Display the directory structure.
+- Run norminette checks on all C files, ordered by directory.
+- Remove the last /* and */ symbols from each C file.
+- Compile each C file in its directory and generate an a.out executable.
+- Execute each a.out file in order, displaying the results.
 
 ## Important Notes Before Use
 
