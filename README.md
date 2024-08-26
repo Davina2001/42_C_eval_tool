@@ -12,6 +12,56 @@ This script is designed to automate the process of checking, cleaning, compiling
 - *Compilation*: Compiles all C files using cc with -Wall, -Wextra, and -Werror flags.
 - *Execution*: Automatically executes the compiled programs in the order of the directories.
 
+## Important Notes Before Use
+- *Entry Point Comment Removal*: This script is specifically designed to remove the comment delimiters from the end of the files, which often include the entry point of your program (e.g., main function). For example, if your program looks like this:
+```c
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+/*
+int	main(void)
+{
+	ft_putchar('a');
+}
+*/
+``` 
+
+After running the script, the comment delimiters /* and */ will be removed, leaving the text within intact.
+
+```c
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+int	main(void)
+{
+	ft_putchar('a');
+}
+
+```
+
+- *Comment Removal*: The script removes the last /* and */ comment symbols from all C files. If your program relies on these comments at the end of the files, using this script may cause unintended behavior or errors.
+  
+- *Directory Placement*: Ensure that the script is placed and executed from the root directory of your repository. Below is a sample directory structure to illustrate where the script should reside:
+
+```plaintext
+    your-project-root/
+    ├── 42_c_eval_tool.sh
+    ├── ex00/
+    │   └── your_file.c
+    ├── ex01/
+    │   └── your_file.c
+    └── ex02/
+        └── your_file.c
+```
+In this example, c_eval.sh should be placed in the your-project-root/ directory.
+
 ## Requirements
 
 - *bash*: The script is written in bash, so ensure you have a bash shell available.
@@ -42,33 +92,6 @@ The script will:
 - Remove the last /* and */ symbols from each C file.
 - Compile each C file in its directory and generate an a.out executable.
 - Execute each a.out file in order, displaying the results.
-
-## Important Notes Before Use
-
-- *Comment Removal*: The script removes the last /* and */ comment symbols from all C files. If your program relies on these comments at the end of the files, using this script may cause unintended behavior or errors.
-  
-- *Directory Placement*: Ensure that the script is placed and executed from the root directory of your repository. Below is a sample directory structure to illustrate where the script should reside:
-
-    plaintext
-  
-    your-project-root/
-  
-    ├── c_eval.sh
-  
-    ├── ex00/
-  
-    │   └── your_file.c
-  
-    ├── ex01/
-
-    │   └── your_file.c
-  
-    └── ex02/
-  
-    │   └── your_file.c
-    
-
-    In this example, c_eval.sh should be placed in the your-project-root/ directory.
 
 ## License
 
