@@ -73,7 +73,3 @@ The script will:
 ## License
 
 This project is licensed under the MIT License.
-
-## Contributing
-
-If you want to contribute to this project, feel free to fork the repository and submit a pull request. Issues and feature requests are welcome!
