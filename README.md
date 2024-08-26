@@ -4,7 +4,7 @@
 
 This script is designed to automate the process of checking, cleaning, compiling, and executing C language projects, particularly for the 42 school. It first displays the directory structure, runs norminette checks on all C files in a specified order, removes specific comment symbols (/* and */), compiles the C files with strict flags, and finally executes the resulting programs.
 
-## ⚠️ Warning
+## ⚠️ Warning ⚠️ 
 
 **Irreversible Operation**: The operations performed by this script are irreversible and there is no backup created automatically. **Do not run this script on your original files**. Instead, clone your repository to a local test directory and run the script there to avoid potential data loss or damage to your original project files.
 
