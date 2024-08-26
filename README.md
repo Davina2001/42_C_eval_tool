@@ -54,7 +54,6 @@ This script is designed to automate the process of checking, cleaning, compiling
     your-project-root/
   
     ├── c_eval.sh
-  
     ├── ex00/
   
     │   └── your_file.c
