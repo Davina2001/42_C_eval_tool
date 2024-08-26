@@ -65,7 +65,7 @@ This script is designed to automate the process of checking, cleaning, compiling
   
     └── ex02/
   
-        └── your_file.c
+    │   └── your_file.c
     
 
     In this example, c_eval.sh should be placed in the your-project-root/ directory.
